@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <ul>
+        <li>{{ movie.title }}</li>
+        <li>{{ movie.released }}</li>
+        <li>{{ movie.plot }}</li>
+    </ul>
+    <img src="{{ movie.thumbnail_url }}" />
+
+{% endblock %}
